@@ -29,7 +29,7 @@ public class Bai4 {
             } else {
                 System.out.print(a.charAt(i));
             }
-            
+
             space = false;
         }
     }
