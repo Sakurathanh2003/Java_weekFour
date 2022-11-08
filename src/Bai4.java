@@ -9,8 +9,7 @@ public class Bai4 {
         a = a.trim();
         a = a.toLowerCase();
 
-        boolean space = false;
-        boolean firstLetter = false;
+        boolean space = true;
 
         for (int i = 0; i < a.length(); i++) {
             if (a.charAt(i) >= '0' && a.charAt(i) <= '9') {
@@ -23,9 +22,8 @@ public class Bai4 {
                 continue;
             }
 
-            if (space || firstLetter == false) {
+            if (space) {
                 System.out.print(a.toUpperCase().charAt(i));
-                firstLetter = true;
             } else {
                 System.out.print(a.charAt(i));
             }
